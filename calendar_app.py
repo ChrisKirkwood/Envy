@@ -10,13 +10,13 @@ class CalendarApp:
         self.root.title("Schedule Calendar")
         self.root.geometry("800x600")
 
-        self.calendar = Calendar(self.root, selectmode='day', year=2023, month=7, day=14)
+        self.calendar = Calendar(self.root, selectmode='day', year=2023, month=7, day=13)
         self.calendar.pack(pady=20)
 
-        self.event_frame = tk.Frame(self.root)
+        self.event_frame = ttk.Frame(self.root)
         self.event_frame.pack(pady=20)
 
-        self.event_label = tk.Label(self.event_frame, text="Event: ")
+        self.event_label = ttk.Label(self.event_frame, text="Event: ")
         self.event_label.pack(side=tk.LEFT)
         self.event_entry = tk.Entry(self.event_frame, width=30)
         self.event_entry.pack(side=tk.LEFT, padx=10)
